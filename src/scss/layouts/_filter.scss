@@ -1,0 +1,89 @@
+.filter {
+    &__inner {
+    }
+    &__nav {
+        display: flex;
+        justify-content: center;
+        &-slide {
+        }
+        &-item {
+        }
+    }
+    &__btn-toggle {
+        @extend .btn-reset;
+        background: $color-beige-3;
+        width: 100%;
+        padding: 10px 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: normal;
+        font-size: 0;
+        line-height: 1.2;
+        color: $color-beige-2;
+        text-align: center;
+        cursor: pointer;
+        transition: all .4s;
+        &:hover {
+            text-decoration: none;
+            @media (min-width: $lg-mf) {
+                color: $color-white-1;
+            }
+        }
+        &-title {
+            display: block;
+            &:before,
+            &:after {
+                width: 100%;
+                display: block;
+                font-size: var(--fs-6);
+                text-align: center;
+            }
+            &:before {
+                content: attr(data-title-normal);
+            }
+            &:after {
+                content: attr(data-title-active);
+            }
+        }
+        &.is-active &-title:before,
+        &:not(.is-active) &-title:after {
+            display: none;
+        }
+        &-icon {
+            width: 20px;
+            height: 20px;
+            margin: 1px 0 -1px;
+            display: block;
+            transition: all .4s;
+            transition-property: transform;
+        }
+        &.is-active &-icon {
+            transform: scaleY(-1);
+        }
+    }
+    &__dropdown {
+        &-container {
+        }
+        &-row {
+            margin-bottom: -32px;
+        }
+        &-col {
+            margin-bottom: 32px;
+            &--range {
+            }
+            &--region {
+            }
+            &--services {
+            }
+            &--language {
+            }
+            &--additionally {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+        &-checked {
+        }
+    }
+}

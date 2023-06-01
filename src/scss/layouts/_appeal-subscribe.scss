@@ -1,0 +1,51 @@
+.appeal-subscribe {
+    background: $gradient-accent-1;
+    padding: 7px 0;
+    color: $color-white-1;
+    border-radius: 0 0 16px 16px;
+    &__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 500;
+        font-size: 14px;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    &__title {
+        margin: 0 6px;
+        img {
+            width: 17px;
+            height: auto;
+            display: inline-block;
+            margin-right: .2em;
+            vertical-align: middle;
+        }
+        a {
+            box-shadow: 0 1px 0 rgba($color-white-1, .66);
+            transition: all .4s;
+            &:hover {
+                @media (min-width: $lg-mf) {
+                    text-decoration: none;
+                    box-shadow: 0 1px 0 rgba($color-white-1, 1);
+                }
+            }
+        }
+    }
+    &__btn {
+        background: $color-accent-4;
+        margin: 0 6px;
+        padding: 4px 8px;
+        display: inline-block;
+        text-align: center;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all .4s;
+        &:hover {
+            text-decoration: none;
+            @media (min-width: $lg-mf) {
+                background: $color-accent-2;
+            }
+        }
+    }
+}

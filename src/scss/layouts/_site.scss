@@ -1,0 +1,17 @@
+.site {
+    &__inner {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    &__appeal-subscribe {
+    }
+    &__header {
+    }
+    &__main {
+        flex-grow: 1;
+    }
+    &__footer {
+        margin-top: auto;
+    }
+}

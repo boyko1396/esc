@@ -1,0 +1,14 @@
+header.header.site__header
+  .container.header__container
+    a(href='#').logo.header__logo
+      img(src="images/logo-type-1.svg" alt="Escortly").logo__img
+    .header__search
+      form(action="#").header__search-form
+        input(name="q" required placeholder="Поиск по Анкетам: номеру, имени и т.д.").header__search-form-input
+        button(type="submit").header__search-form-btn
+          svg.icon
+            use(xlink:href='images/sprite.svg#search')
+    .header__action
+      a(href="#").btn.btn--theme-accent.btn--size-md.header__action-item.header__action-item--add-profile
+        span.btn__inner
+          span.btn__title Добавить анкету

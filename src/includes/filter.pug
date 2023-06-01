@@ -1,0 +1,68 @@
+.filter
+  .filter__inner
+    .filter__nav
+      .filter__nav-slide
+        button(type="button").filter-nav-item.filter__nav-item
+          .filter-nav-item__inner
+            .filter-nav-item__title Девушки
+            .filter-nav-item__count ~153
+      .filter__nav-slide
+        button(type="button").filter-nav-item.filter__nav-item
+          .filter-nav-item__inner
+            .filter-nav-item__title Трансы
+            .filter-nav-item__count ~53
+      .filter__nav-slide
+        button(type="button").filter-nav-item.filter__nav-item
+          .filter-nav-item__inner
+            .filter-nav-item__title Геи
+            .filter-nav-item__count ~23
+      .filter__nav-slide
+        button(type="button").filter-nav-item.filter__nav-item
+          .filter-nav-item__inner
+            .filter-nav-item__title Лесбо
+            .filter-nav-item__count ~63
+    button(type="button").js-filter-btn-toggle.filter__btn-toggle
+      span(data-title-normal="Показать фильтр" data-title-active="Cкрыть фильтры").filter__btn-toggle-title
+      svg.filter__btn-toggle-icon
+        use(xlink:href='images/sprite.svg#arrow-type-2')
+    form(action="#").filter__dropdown
+      .container.filter__dropdown-container
+        .row.filter__dropdown-row
+          .row__col.row__col--3.filter__dropdown-col.filter__dropdown-col--range
+            .slider-range-el.filter__dropdown-slider-range-el
+              .slider-range-el__title Возраст
+              .slider-range-el__body
+                .js-range-age-init.slider-range-el__control
+          .row__col.row__col--3.filter__dropdown-col.filter__dropdown-col--range
+            .slider-range-el.filter__dropdown-slider-range-el
+              .slider-range-el__title Рост (в см)
+              .slider-range-el__body
+                .js-range-height-init.slider-range-el__control
+          .row__col.row__col--3.filter__dropdown-col.filter__dropdown-col--range
+            .slider-range-el.filter__dropdown-slider-range-el
+              .slider-range-el__title Вес (в кг)
+              .slider-range-el__body
+                .js-range-weight-init.slider-range-el__control
+          .row__col.row__col--3.filter__dropdown-col.filter__dropdown-col--range
+            .slider-range-el.filter__dropdown-slider-range-el
+              .slider-range-el__title Грудь
+              .slider-range-el__body
+                .js-range-breast-init.slider-range-el__control
+          .row__col.row__col--3.filter__dropdown-col.filter__dropdown-col--region
+            select(name="settings-country")#settings-country.js-select-init.select.select--theme-white.select--size-md
+              option(value="Район" selected) Район
+              option(value="Район") Район
+              option(value="Район") Район
+          .row__col.row__col--3.filter__dropdown-col.filter__dropdown-col--services
+          .row__col.row__col--3.filter__dropdown-col.filter__dropdown-col--language
+          .row__col.row__col--3.filter__dropdown-col.filter__dropdown-col--additionally
+            .u-checked-slide.filter__dropdown-checked
+              label.u-checked-slide__label
+                input(type="checkbox" name="filter-departure").u-checked-slide__control
+                span.u-checked-slide__title Выезд
+                span.u-checked-slide__icon
+            .u-checked-slide.filter__dropdown-checked
+              label.u-checked-slide__label
+                input(type="checkbox" name="filter-apartments").u-checked-slide__control
+                span.u-checked-slide__title Апартамнты
+                span.u-checked-slide__icon

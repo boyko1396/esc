@@ -1,0 +1,39 @@
+// typography
+$ff-default: 'Inter', Arial, sans-serif;
+
+// pallets
+$color-black-1: #22191E;
+$color-white-1: #fff;
+$color-white-2: #FDF7F8;
+$color-accent-1: #DC0C49;
+$color-accent-2: #ED0347;
+$color-accent-3: #D90D48;
+$color-accent-4: #DD4F78;
+$color-accent-5: #E8084D;
+$color-accent-6: #EA0548;
+$color-beige-1: #41272F;
+$color-beige-2: #B28794;
+$color-beige-3: #41272F;
+$color-beige-4: #41272F;
+$color-beige-5: #4F2E38;
+$color-beige-6: #84485B;
+$color-beige-7: #3D252E;
+$color-beige-8: #674E56;
+$color-pink-1: #FE11BB;
+$gradient-accent-1: linear-gradient(90deg,$color-accent-2 0%,$color-accent-3 45%,$color-accent-2 90%);
+
+// media breakpoints
+$xl: 1440px;
+$xl-mf: $xl + 1;
+
+$lg: 1199px;
+$lg-mf: $lg + 1;
+
+$md: 991px;
+$md-mf: $md + 1;
+
+$sm: 767px;
+$sm-mf: $sm + 1;
+
+$xs: 576px;
+$xs-mf: $xs;
